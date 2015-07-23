@@ -24,7 +24,7 @@ stdev|The standard deviation of the feature for this activity and subject.
 The activity names are used verbatim from the original file *activity_labels.txt* since they are descriptive enough.
 
 Id|Activity Name
---|-------------
+---|-------------
 1| WALKING
 2| WALKING_UPSTAIRS
 3| WALKING_DOWNSTAIRS
@@ -52,7 +52,7 @@ Most of the original naming convention is used, the first character is *t* or *f
 Note that the *id* field corresponds to the first column of the feature in the *features.txt* file.
 
 id|name|description
--|-|-
+---|---|---
 *Time features*||
 1 | tBodyAccXM | Body component of the accelerometer value, X coordinate, mean
 2 | tBodyAccYM | Body component of the accelerometer value, Y coordinate, mean

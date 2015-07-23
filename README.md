@@ -22,6 +22,26 @@ output: html_document
 
 **important**: please make sure the cols.txt file is in the same directory as the run_analysis.R script.
 
+##Example
+Assume you have unzipped the dataset file to ~/getdata/dataset and that both run_analysis.R and cols.txt are placed in ~/getdata/script
+
+```
+> dataDir="~/getdata/dataset"
+
+> setwd("~/getdata/script")
+
+> source("run_analysis.R")
+
+> str(result)
+
+'data.frame':	11880 obs. of  5 variables:
+ $ subject : Factor w/ 30 levels "1","2","3","4",..: 1 1 1 1 1 1 2 2 2 2 ...
+ $ activity: Factor w/ 6 levels "WALKING","WALKING_UPSTAIRS",..: 6 4 5 1 3 2 6 4 5 1 ...
+ $ feature : Factor w/ 66 levels "fBodyAccJerkXM",..: 37 37 37 37 37 37 37 37 37 37 ...
+ $ mean    : num  0.222 0.261 0.279 0.277 0.289 ...
+ $ stdev   : num  0.16893 0.06333 0.00799 0.04639 0.08416 ...
+```
+
 ##Adding/removing measurements
 You can add or remove measurements from the tidy dataset by editing the cols.txt file.
 
